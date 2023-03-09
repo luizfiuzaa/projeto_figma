@@ -1,0 +1,72 @@
+* {
+  outline: 1px dashed coral;
+}
+
+:root {
+  --primary-color: #5d8a66;
+  --secondary-color: #1a6566;
+  --tertiary-color: #21445b;
+  --quaternary-color: #323050;
+  --quinary-color: #45214a;
+
+  --dark-color: #000;
+  --light-color: #fff;
+  --grayscale-color: #d9d9d9;
+}
+
+.left-side, .right-side {
+  /* altura 100% da tela- vertical heigh */
+  height: 100vh;
+  /* ocultar a barra de rolagem */
+  overflow: hidden;
+}
+
+.left-side{
+  background: linear-gradient(180deg, var(--tertiary-color) 0%, var(--quaternary-color) 100%);
+  background-color: var(--quaternary-color);
+}
+
+.left-side__brand {
+
+}
+
+.right-side {
+
+}
+
+.right-side__title {
+
+}
+
+.right-side__form {
+
+}
+
+.form-control{
+  border-radius: 16px;
+  background-color: var(--grayscale-color);
+}
+
+.right-side__label {
+font-weight: bold;
+}
+
+.right-side__button {
+background: var(--secondary-color);
+border-radius: 20px;
+color: var(--light-color);
+transition: .5s;
+}
+
+.right-side__button:hover{
+  background: var(--tertiary-color);
+}
+
+.form-control:focus{
+  background: none;
+  outline: none;
+}
+
+.right-side__remember-pass {
+
+}
