@@ -26,12 +26,12 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-6 d-flex justify-content-center align-items-center left-side">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center left-side">
           <img src="assets/img/icon.svg" class="img-fluid left-side__brand" />
         </div>
-        <div class="col-6 d-flex justify-content-center align-items-center flex-column right-side">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column right-side">
           <h1 class="right-side__title">Squirt.le</h1>
-          <form class="right-side__form col-7">
+          <form class="right-side__form col-7 mt-5">
             <div class="form-group">
               <label for="exampleInputEmail1" class="right-side__label">E-mail</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -40,8 +40,12 @@
               <label for="exampleInputPassword1" class="right-side__label ">Senha</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <button type="submit" class="btn btn-primary right-side__button col-12">Acessar</button>
-            <p class="right-side__remeber-pass">Esqueci a Senha</p>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary col-md-5 right-side__button">Acessar</button>
+              </div>
+            </div>
+            <p class="right-side__remeber-pass d-flex justify-content-center align-items-center mt-2"><a href="#">Esqueci a Senha</a></p>
           </form>
         </div>
       </div>

@@ -1,6 +1,8 @@
-* {
+/* * {
   outline: 1px dashed coral;
-}
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 
 :root {
   --primary-color: #5d8a66;
@@ -14,59 +16,74 @@
   --grayscale-color: #d9d9d9;
 }
 
-.left-side, .right-side {
+.left-side,
+.right-side {
   /* altura 100% da tela- vertical heigh */
   height: 100vh;
   /* ocultar a barra de rolagem */
   overflow: hidden;
 }
 
-.left-side{
-  background: linear-gradient(180deg, var(--tertiary-color) 0%, var(--quaternary-color) 100%);
+.left-side {
+  background: linear-gradient(
+    180deg,
+    var(--tertiary-color) 0%,
+    var(--quaternary-color) 100%
+  );
   background-color: var(--quaternary-color);
 }
 
 .left-side__brand {
-
+  width: 40vw;
+  height: 40vh;
 }
 
 .right-side {
-
 }
 
 .right-side__title {
-
+  font-family: "Megrim", sans-serif;
+  font-size: 3.5em;
 }
 
 .right-side__form {
-
 }
 
-.form-control{
-  border-radius: 16px;
+.form-control {
+  border-radius: 7px;
   background-color: var(--grayscale-color);
 }
 
 .right-side__label {
-font-weight: bold;
+  font-weight: bold;
 }
 
 .right-side__button {
-background: var(--secondary-color);
-border-radius: 20px;
-color: var(--light-color);
-transition: .5s;
+  background: var(--secondary-color);
+  border-radius: 20px;
+  color: var(--light-color);
+  transition: 0.2s;
 }
 
-.right-side__button:hover{
+.right-side__button:hover {
   background: var(--tertiary-color);
 }
 
-.form-control:focus{
+.form-control:focus {
   background: none;
   outline: none;
 }
 
 .right-side__remember-pass {
+  color: var(--tertiary-color);
+}
 
+.right-side__remember-pass:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 770px) {
+  .left-side{
+    height: 198px;
+  }
 }
