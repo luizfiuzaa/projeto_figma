@@ -84,6 +84,9 @@
 
 @media (max-width: 770px) {
   .left-side{
-    height: 198px;
+    height: 200px;
+  }
+  .right-side {
+    heith: calc(100vh - 200px);
   }
 }
