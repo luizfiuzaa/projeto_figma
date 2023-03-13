@@ -21,7 +21,8 @@
   /* altura 100% da tela- vertical heigh */
   height: 100vh;
   /* ocultar a barra de rolagem */
-  overflow: hidden;
+  overflow-y: hidden;
+  overfloe-x: hidden;
 }
 
 .left-side {
